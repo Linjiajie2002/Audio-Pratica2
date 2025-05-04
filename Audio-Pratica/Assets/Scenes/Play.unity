@@ -7428,6 +7428,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &129699269 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4459864850019384741, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 1020465883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &129699274
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7537,9 +7542,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 129699274}
-  woodSound: {fileID: 8300000, guid: 10f2281571616f44381fe94255b9fb86, type: 3}
-  stoneSound: {fileID: 8300000, guid: b34502797f4a7b44299ce0f0fe66d7f8, type: 3}
-  grassSound: {fileID: 8300000, guid: 15347a7db4af907459aafa214b4a9a71, type: 3}
+  woodSound: {fileID: 8300000, guid: 2ffe8ab2994d08e4daa274b2626b94b8, type: 3}
+  stoneSound: {fileID: 8300000, guid: de2dbe51e7b541043bca19ea2c329dfc, type: 3}
+  grassSound: {fileID: 8300000, guid: de7229511f0985e44ae4cde3ef296a33, type: 3}
+  footstepInterval: 0.5
+  rb: {fileID: 129699269}
 --- !u!1001 &129764004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7883,7 +7890,7 @@ GameObject:
   - component: {fileID: 140660538}
   m_Layer: 0
   m_Name: Decal
-  m_TagString: Untagged
+  m_TagString: rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23039,6 +23046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1230586606}
     m_Modifications:
+    - target: {fileID: 1923326415918028, guid: a40bfa505ba782a438cc551622e7b4a6, type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     - target: {fileID: 1923326415918028, guid: a40bfa505ba782a438cc551622e7b4a6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -43229,6 +43240,10 @@ PrefabInstance:
     - target: {fileID: 1303656074017400, guid: d1a160c389b4333409d5b5e51305e444, type: 3}
       propertyPath: m_Name
       value: Carpet01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303656074017400, guid: d1a160c389b4333409d5b5e51305e444, type: 3}
+      propertyPath: m_TagString
+      value: wood
       objectReference: {fileID: 0}
     - target: {fileID: 1303656074017400, guid: d1a160c389b4333409d5b5e51305e444, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -101960,6 +101975,10 @@ PrefabInstance:
       value: Carpet03 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1923326415918028, guid: a40bfa505ba782a438cc551622e7b4a6, type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923326415918028, guid: a40bfa505ba782a438cc551622e7b4a6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -112982,6 +113001,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1230586606}
     m_Modifications:
+    - target: {fileID: 1695977715251588, guid: 186b3c4ee440a154eb014aaeeb5d5c1f, type: 3}
+      propertyPath: m_TagString
+      value: wood
+      objectReference: {fileID: 0}
     - target: {fileID: 1695977715251588, guid: 186b3c4ee440a154eb014aaeeb5d5c1f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
