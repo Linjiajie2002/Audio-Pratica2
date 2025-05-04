@@ -7,16 +7,15 @@ public class FootstepSound : MonoBehaviour
     public AudioClip stoneSound;
     public AudioClip grassSound;
 
-    public float footstepInterval = 0.5f;  // 脚步声播放间隔
+    public float footstepInterval = 0.5f;  
     private float footstepTimer = 0f;
 
-    public Rigidbody rb; // 角色刚体
+    public Rigidbody rb;
 
     void Update()
     {
         footstepTimer += Time.deltaTime;
 
-        // 判断是否移动 + 是否在地面
         if (IsGrounded() && rb.velocity.magnitude > 0.2f)
         {
             if (footstepTimer >= footstepInterval)
@@ -29,7 +28,7 @@ public class FootstepSound : MonoBehaviour
 
     bool IsGrounded()
     {
-        // 发射一条往下的射线，检测脚下是否是地面
+        
         return Physics.Raycast(transform.position, Vector3.down, 1.1f);
     }
 

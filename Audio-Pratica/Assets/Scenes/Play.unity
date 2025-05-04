@@ -1434,6 +1434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 1421525585144540, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
+      propertyPath: m_TagString
+      value: rock
+      objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -80453,6 +80457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1421525585144540, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
+      propertyPath: m_TagString
+      value: rock
+      objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -80479,19 +80487,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.70602775
       objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.7081814
       objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.0016512729
       objectReference: {fileID: 0}
     - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0011279728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.179
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -13.544983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425874899348998, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 13.770004
       objectReference: {fileID: 0}
     - target: {fileID: 23600036304230078, guid: e3b08ca4cbd32534ea8d0b5e519709e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -116440,7 +116460,7 @@ GameObject:
   - component: {fileID: 2105891593}
   m_Layer: 0
   m_Name: Decal (1)
-  m_TagString: Untagged
+  m_TagString: rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117194,7 +117214,7 @@ GameObject:
   - component: {fileID: 2121479431}
   m_Layer: 0
   m_Name: Decal
-  m_TagString: Untagged
+  m_TagString: rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

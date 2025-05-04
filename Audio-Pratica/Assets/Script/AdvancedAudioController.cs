@@ -4,12 +4,12 @@ using System.Collections;
 
 public class AdvancedAudioController : MonoBehaviour
 {
-    [Header("Audio Mixer设置")]
+    [Header("Audio Mixer")]
     [SerializeField] AudioMixer audioMixer;
     [SerializeField] AudioMixerSnapshot indoorSnapshot;
     [SerializeField] AudioMixerSnapshot outdoorSnapshot;
     
-    [Header("过渡设置")]
+    [Header("transition setting")]
     [SerializeField] float fadeDuration = 2f;
     [SerializeField] float transitionSpeed = 1f;
 
@@ -38,7 +38,7 @@ public class AdvancedAudioController : MonoBehaviour
                 transitionSpeed * Time.deltaTime
             );
 
-            // 混合两个快照
+            // Snapshot transition
             audioMixer.TransitionToSnapshots(
                 new[] { indoorSnapshot, outdoorSnapshot },
                 new[] { 1 - currentLerp, currentLerp },
@@ -49,7 +49,6 @@ public class AdvancedAudioController : MonoBehaviour
         }
     }
 
-    // 在编辑器中可视化调试
     void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
